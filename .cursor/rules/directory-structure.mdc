@@ -1,0 +1,10 @@
+---
+description: A overview of the directory structure and the responsibilities of each.
+globs: 
+---
+# Project Overview
+A Rust Tauri project that abstracts multiple frontend clients (android, ios, desktop) into one codebase.
+
+# Project structure
+./src: contains React code for the frontend. Interfaces with Rust code in src-tauri via src-tauri/src/lib.rs via invoke command.
+src-tauri/src: contains Rust code that is shared amongst all frontends
