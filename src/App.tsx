@@ -81,6 +81,18 @@ function App() {
           <div className="flex flex-col gap-8 content-start">
             <div className="bg-white rounded-lg shadow p-4 h-[50vh]">
               {/* Top right area */}
+              <div className="flex flex-col h-full">
+                <h2 className="text-xl font-semibold mb-4">Notes</h2>
+                <textarea
+                  className="flex-grow w-full p-3 border rounded-md resize-none mb-4"
+                  placeholder="Awaiting your notes..."
+                />
+                <button
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+                >
+                  Save Note
+                </button>
+              </div>
             </div>
             <div className="bg-white rounded-lg shadow p-4 h-[50vh]">
               {/* Bottom right area */}
