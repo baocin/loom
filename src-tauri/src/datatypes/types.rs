@@ -1,7 +1,6 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-
 #[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum DeviceType {
@@ -14,6 +13,34 @@ pub enum DeviceType {
     Gamepad,
     Watch,
     Phone,
+    Smartphone,
+    Desktop,
+    Laptop,
+    Tablet,
+    Other,
+    Display
+}
+
+impl ToString for DeviceType {
+    fn to_string(&self) -> String {
+        match self {
+            DeviceType::Unknown => "UNKNOWN".to_string(),
+            DeviceType::Headphone => "HEADPHONE".to_string(),
+            DeviceType::Speaker => "SPEAKER".to_string(),
+            DeviceType::Car => "CAR".to_string(),
+            DeviceType::Keyboard => "KEYBOARD".to_string(),
+            DeviceType::Mouse => "MOUSE".to_string(),
+            DeviceType::Gamepad => "GAMEPAD".to_string(),
+            DeviceType::Watch => "WATCH".to_string(),
+            DeviceType::Phone => "PHONE".to_string(),
+            DeviceType::Smartphone => "SMARTPHONE".to_string(),
+            DeviceType::Desktop => "DESKTOP".to_string(),
+            DeviceType::Laptop => "LAPTOP".to_string(),
+            DeviceType::Tablet => "TABLET".to_string(),
+            DeviceType::Other => "OTHER".to_string(),
+            DeviceType::Display => "DISPLAY".to_string(),
+        }
+    }
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
@@ -75,6 +102,12 @@ pub enum CompressionAlgorithm {
     Lz4,
     Zstd,
     Gzip,
+}
+
+impl Default for CompressionAlgorithm {
+    fn default() -> Self {
+        CompressionAlgorithm::None
+    }
 }
 
 pub type Metadata = HashMap<String, serde_json::Value>;

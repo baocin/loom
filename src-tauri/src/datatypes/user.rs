@@ -1,6 +1,5 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
-use crate::datatypes::types::BaseEntity;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct User {

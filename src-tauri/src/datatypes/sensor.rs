@@ -1,6 +1,6 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
-use crate::datatypes::types::{BaseData, CameraType, ConnectionType, Metadata};
+use crate::datatypes::types::{CameraType, ConnectionType, Metadata};
 
 // Motion sensors
 #[derive(Debug, Serialize, Deserialize)]

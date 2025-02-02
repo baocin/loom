@@ -1,6 +1,6 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
-use crate::datatypes::types::{BaseEntity, CompressionAlgorithm, SyncPriority, Metadata};
+use crate::datatypes::types::{CompressionAlgorithm, SyncPriority, Metadata};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RetentionConfig {

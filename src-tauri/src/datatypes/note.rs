@@ -1,6 +1,6 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
-use crate::datatypes::types::{BaseEntity, EntityType, NotePriority, Metadata};
+use crate::datatypes::types::{EntityType, NotePriority, Metadata};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Note {
