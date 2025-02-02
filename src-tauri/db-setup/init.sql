@@ -200,6 +200,36 @@ CREATE TABLE step_count_data (
     PRIMARY KEY (timestamp, device_id)
 );
 
+CREATE TABLE call_log_data (
+    timestamp TIMESTAMP NOT NULL,
+    device_id VARCHAR NOT NULL REFERENCES devices(device_id),
+    call_type VARCHAR NOT NULL,
+    phone_number VARCHAR,
+    contact_name VARCHAR,
+    duration_seconds INTEGER,
+    is_missed BOOLEAN,
+    is_blocked BOOLEAN,
+    sim_slot INTEGER,
+    metadata JSON,
+    PRIMARY KEY (timestamp, device_id)
+);
+
+CREATE TABLE todos_data (
+    timestamp TIMESTAMP NOT NULL,
+    device_id VARCHAR NOT NULL REFERENCES devices(device_id),
+    todo_id VARCHAR NOT NULL,
+    title VARCHAR NOT NULL,
+    description TEXT,
+    due_date TIMESTAMP,
+    completed BOOLEAN DEFAULT FALSE,
+    completed_at TIMESTAMP,
+    priority INTEGER,
+    tags VARCHAR[],
+    metadata JSON,
+    PRIMARY KEY (timestamp, device_id, todo_id)
+);
+
+
 CREATE TABLE audio_level_data (
     timestamp TIMESTAMP NOT NULL,
     device_id VARCHAR NOT NULL REFERENCES devices(device_id),
