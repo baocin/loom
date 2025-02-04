@@ -10,6 +10,8 @@ Loom is a privacy-focused, local-first system for memory augmentation and person
 
 Born from experiences with tools like Roam, Obsidian, Logseq, and Notion, Loom goes beyond traditional note-taking to capture both information and its surrounding context. Whether it's documenting important conversations, tracking health habits, or providing legal protection, Loom serves as your personal memory system.
 
+V1: https://github.com/baocin/pino (overly complicated)
+
 ### Real-World Applications
 
 - **Legal Protection**: Automatic detection and transcription of important encounters
