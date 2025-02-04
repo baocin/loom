@@ -10,8 +10,6 @@ Loom is a privacy-focused, local-first system for memory augmentation and person
 
 Born from experiences with tools like Roam, Obsidian, Logseq, and Notion, Loom goes beyond traditional note-taking to capture both information and its surrounding context. Whether it's documenting important conversations, tracking health habits, or providing legal protection, Loom serves as your personal memory system.
 
-V1: https://github.com/baocin/pino (overly complicated)
-
 ### Real-World Applications
 
 - **Legal Protection**: Automatic detection and transcription of important encounters
@@ -82,6 +80,10 @@ We welcome contributions! Current challenges we're addressing:
 This project is licensed under the CC BY-NC-SA 4.0 License.
 See [LICENSE.md](LICENSE.md) for details.
 
+
+## Legal
+Follow all local laws. You are responsible for your own actions.
+
 ---
 
-**Note**: This project is the successor to Pino, incorporating lessons learned and focusing on a more streamlined, privacy-focused approach to personal information management.
+**Note**: This project is the successor to [Pino](https://github.com/baocin/pino), incorporating lessons learned and focusing on a more streamlined, privacy-focused approach to personal information management.
